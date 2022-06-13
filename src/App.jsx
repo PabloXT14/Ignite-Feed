@@ -4,6 +4,15 @@ import { Post } from "./components/Post";
 
 import styles from './App.module.css';
 import './global.css';
+import { posts } from "./datas/posts";
+
+
+/* Dados do Post:
+- id
+- author: { avatarUrl: '', name: '', role: ''} 
+- content: [{}, {}, {}]
+- publishedAt: new Date();
+*/
 
 export function App() {
 
@@ -14,9 +23,15 @@ export function App() {
       <div className={styles.wrapper}>
         <Sidebar />
         <main>
-          <Post />
-          <Post />
-          <Post />
+          {posts.map(post => {
+            return (
+              <Post 
+                author={post.author}
+                content={post.content}
+                publishedAt={post.publishedAt}
+              />
+            )
+          })}
         </main>
       </div>
     </div>
