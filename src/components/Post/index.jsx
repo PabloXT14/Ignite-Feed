@@ -33,15 +33,23 @@ export function Post({ author, content, publishedAt }) {
     }
 
     function handleNewCommentChange(event) {
+        event.target.setCustomValidity('');// parar de dar msg de inválido
         setNewCommentText(event.target.value);
     }
 
-    function deleteComment(comment) {
-        console.log(`Commentário "${comment}" deletado!`);
-        const commentsUpdated = comments.filter(comt => comt !== comment);
-
-        setComments(commentsUpdated);
+    function handleNewCommentInvalid(event) {
+        //setCustomValidity: função do Javascript que seta o texto de um input inválido
+        event.target.setCustomValidity('Esse campo é obrigatório!');
     }
+
+    function deleteComment(commentToDelete) {
+        // IMUTABILIDADE -> as variáveis não sofrem mutação, nós criamos um novo valor (um novo espaço na memória)
+        const commentsWithoutDeletedOne = comments.filter(comment => comment !== commentToDelete);
+
+        setComments(commentsWithoutDeletedOne);
+    }
+
+    const isNewCommentEmpty = newCommentText.length === 0;
 
     return (
         <article className={styles.post}> 
@@ -76,10 +84,12 @@ export function Post({ author, content, publishedAt }) {
                     value={newCommentText}
                     onChange={handleNewCommentChange}
                     placeholder='Deixe um comentário'
+                    onInvalid={handleNewCommentInvalid}
+                    required
                 />
 
                 <footer>
-                    <button type='submit'>Publicar</button>
+                    <button type='submit' disabled={isNewCommentEmpty}>Publicar</button>
                 </footer>
             </form>
 
