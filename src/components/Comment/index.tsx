@@ -20,7 +20,6 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
     function handleLikeComment() {
         setLikeCount((state) => {
             const newState = state + 1;
-            console.log(newState);
 
             return newState;
         });
