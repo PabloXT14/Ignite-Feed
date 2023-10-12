@@ -1,64 +1,80 @@
 <h1 align="center">
-    <img alt="Logo Ignite Feed" title="Logo Ignite Feed" src="./.github/Logo.png" />
+  <img
+    src=".github/logo.png"
+    alt="Logo Ignite Feed"
+    title="Logo Ignite Feed"
+  />
 </h1>
 
 <p align="center">
- <a href="#-demonstration">Demonstration</a> |
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/pabloxt14/Ignite-Feed">
+
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/pabloxt14/Ignite-Feed">
+  
+  <a href="https://github.com/pabloxt14/Ignite-Feed/commits/master">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/pabloxt14/Ignite-Feed">
+  </a>
+    
+   <img alt="License" src="https://img.shields.io/badge/license-MIT-blue">
+
+   <a href="https://github.com/pabloxt14/Ignite-Feed/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/pabloxt14/Ignite-Feed?style=social">
+  </a>
+</p>
+
+<p>
+  <img src=".github/cover.png" alt="Capa do projeto" title="Capa do projeto" />
+</p>
+
+<h4 align="center"> 
+	🚀 Aplicação finalizada 🚀
+</h4>
+
+<p align="center">
+ <a href="#-about">About</a> |
  <a href="#-deploy">Deploy</a> |
- <a href="#-technologies">Technologies</a> |
- <a href="#-layout">Layout</a> |
- <a href="#-clipboard-pré-requisitos">Clipboard</a> |
- <a href="#-settings">Settings</a>
+ <a href="#-layout">Layout</a> | 
+ <a href="#-how-it-works">How It Works</a> | 
+ <a href="#-technologies">Technologies</a> | 
+ <a href="#-author">Author</a> | 
+ <a href="#-license">License</a>
+</p>
+
+
+## 💻 About
+
+O Ignite Feed é um projeto de exemplo de um feed de rede social, onde se tem os posts dos usuários, tags do post e comentários de outros usuários no post, dados típicos de uma publicação de rede social. 
+
+Caso goste do projeto marque a estrelinha⭐ e compartilhe para me ajudar 👍, e me siga para ver outros projetos meus.
+
+---
+
+## 🔗 Deploy
+
+O deploy da aplicação pode ser acessada através do seguinte link: <a target="_blank" href="https://ignite-feed-lovat.vercel.app/">Link</a>
+
+---
+
+## 🎨 Layout
+
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/RSjXXcIse9wSFe6CAv6kNc/Ignite-Feed/duplicate). É necessário ter conta no [Figma](https://www.figma.com/) para acessá-lo.
+
+Veja uma demonstração visual das principais telas da aplicação:
+
+<p align="center">
+  <img
+    src=".github/desktop-page.png"
+    alt="Desktop Page Demonstration"
+    title="Desktop Page Demonstration"
+    width="100%"
+  />
 </p>
 
 ---
 
-O Ignite Feed é um projeto de exemplo de um feed de rede social, onde se tem os posts dos usuários, tags do post e comentários de outros usuários no post, dados típicos de uma publicação de rede social. 
+## 🚀 How it works
 
-* Caso goste do projeto marque a estrelinha⭐ e compartilhe para me ajudar 👍, e me siga para ver outros projetos meus.
-
-## 💻 Demonstration
-<p align="center">
-    <img alt="Capa do projeto" title="Capa do projeto" src="./.github/Capa.png" />
-</p>
-<!-- <p align="center">
-    <img
-        alt="Gif de demonstração do projeto" 
-        title="Gif de demonstração do projeto" 
-        src="./.github/Ignite_Todo-Demonstration.gif" 
-    />
-</p> -->
-
-
-## 💻 Deploy
-
-Clique no link a seguir para executar o projeto na sua máquina: <a target="_blank" href="https://ignite-feed-lovat.vercel.app/">Link</a>
-
-
-## 🚀 Technologies
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-✔ [Vite](https://vitejs.dev/)
-<br/>
-✔ [ReactJS](https://reactjs.org/)
-<br/>
-✔ [TypeScript](https://www.typescriptlang.org/)
-<br/>
-✔ [CSS-Modules](https://github.com/css-modules/css-modules)
-<br/>
-✔ [Phosphor Icons](https://phosphoricons.com/)
-<br/>
-✔ [date-fns](https://date-fns.org/docs/Getting-Started)
-<br/>
-
-
-## 🎨 Layout
-
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/RSjXXcIse9wSFe6CAv6kNc/Ignite-Feed-(Community)?node-id=0%3A1). É necessário ter conta no [Figma](https://www.figma.com/) para acessá-lo.
-
-
-## 📋 Clipboard (Pré-requisitos)
+### Pré-requisitos
 
 Antes de baixar o projeto você vai precisar ter instalado na sua máquina as seguintes ferramentas:
 
@@ -66,37 +82,57 @@ Antes de baixar o projeto você vai precisar ter instalado na sua máquina as se
 * [NodeJS](https://nodejs.org/en/)
 * [Yarn](https://yarnpkg.com/) ou [NPM](https://www.npmjs.com/)
 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-## ⚙ Settings
+### Clonando e Executando
 
-Segue os comandos para baixar e executar o projeto na sua máquina:
+Passo a passo para clonar e executar a aplicação na sua máquina:
 
-* `git clone` + `URL do Projeto`: clonar este repositório.
-* `cd Ignite-Feed`: acessa a pasta do projeto no terminal.
-* `yarn`: para baixar as dependências do projeto.
-* `yarn dev`: 
-    - Executa o projeto em modo/ambiente de desenvolvimento.
-    - Abra [http://localhost:3000](http://localhost:3000) para ver o projeto rodando no Navegador.
-    - A página será recarregada se você fizer edições no código, e se tiver algum erro será mostrado no console.
-* `yarn build`: 
-    - Compila a aplicação para a produção na pasta `build`.
+```bash
+# Clone este repositório
+$ git clone git@github.com:pabloxt14/Ignite-Feed.git
 
+# Acesse a pasta do projeto no terminal
+$ cd Ignite-Feed
 
-## 📝 License
+# Instale as dependências
+$ npm install
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+# Execute a aplicação em modo de desenvolvimento
+$ npm run dev
+
+# A aplicação inciará em alguma porta disponível que poderá ser acessada pelo navegador
+```
+
+---
+
+## 🛠 Technologies
+
+As seguintes principais ferramentas foram usadas na construção do projeto:
+
+- **[Vite](https://vitejs.dev/)**
+- **[ReactJS](https://reactjs.org/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[CSS-Modules](https://github.com/css-modules/css-modules)**
+- **[Phosphor Icons](https://phosphoricons.com/)**
+- **[date-fns](https://date-fns.org/docs/Getting-Started)**
+
+> Para mais detalhes das dependências gerais da aplicação veja o arquivo [package.json](./package.json)
+
+---
 
 ## ✍ Author
 
-<img alt="PabloXT14" title="PabloXT14" src="https://avatars.githubusercontent.com/u/71723595?s=400&u=f7a1ec0c2e1f7cd1acf79f61043dbc75b1079de6&v=4" width="100">
-<p>
-    Made with 💜 by PabloXT14
-</p>
-<p align="left">
-    <a href="https://www.linkedin.com/in/pabloalan/" target="_blank">
-        <img align="center" src="https://img.shields.io/badge/LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin Pablo Alan" />
-    </a>
-    <a href="mailto:pabloxt14@gmail.com" target="_blank">
-        <img align="center" src="https://img.shields.io/badge/Gmail-FF0000?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail Pablo Alan" />
-    </a>
-</p>
+<img alt="Perfil Github" title="Perfil Github" src="https://github.com/PabloXT14.png" width="100px" />
+
+[![Linkedin Badge](https://img.shields.io/badge/-Pablo_Alan-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/pabloalan/)](https://www.linkedin.com/in/pabloalan/)
+
+[![Gmail Badge](https://img.shields.io/badge/-pabloxt14@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:pabloxt14@gmail.com)](mailto:pabloxt14@gmail.com)
+
+---
+
+## 📝 License
+
+Este projeto está sob a licença MIT. Consulte o arquivo [LICENSE](./LICENSE) para mais informações
+
+Feito com 💜 por Pablo Alan 👋🏽 [Entre em contato!](https://www.linkedin.com/in/pabloalan/)
